@@ -19,6 +19,7 @@ Before you can run the FHIR server, you must install its dependencies via `go ge
 
 ```
 $ cd $GOPATH/src/github.com/mitre/fhir-server
+$ go get
 $ go build
 ```
 

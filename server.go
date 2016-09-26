@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 
-	"github.com/intervention-engine/fhir/auth"
 	"github.com/intervention-engine/fhir/server"
 )
 
@@ -15,5 +14,5 @@ func main() {
 		s.Engine.Use(server.RequestLoggerHandler)
 	}
 
-	s.Run(server.Config{Auth: auth.None(), ServerURL: "http://localhost:3001"})
+	s.Run(server.DefaultConfig)
 }
